@@ -1,8 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Container  from "../shared/Container"
+import resume from "../assets/cv/Resume.pdf"
+
 
 const Banner = () => {
   return (
+    <Container>
     <div className="mt-12 container mx-auto mb-8">
       <div className="grid grid-cols-2 gap-4 text-white">
         <div className="flex flex-col justify-center p-12">
@@ -29,13 +32,17 @@ const Banner = () => {
         </div> */}
       </div>
       <div className="mt-2 mx-10">
-        <Link>
-          <button className="py-4 px-3 bg-emerald-900 rounded-lg text-white text-xl">
-            Download Resume
-          </button>
-        </Link>
-      </div>
+          <a
+            href={resume} 
+            download
+          >
+            <button className="py-4 px-3 bg-emerald-900 rounded-lg text-white text-xl">
+              Download Resume
+            </button>
+          </a>
+        </div>
     </div>
+      </Container>
   );
 };
 

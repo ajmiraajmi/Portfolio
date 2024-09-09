@@ -1,5 +1,6 @@
 import React from "react";
 import { useInView } from 'react-intersection-observer';
+import Container  from "../shared/Container"
 
 const Experience = () => {
   const { ref: experienceRef, inView: experienceInView } = useInView({
@@ -32,6 +33,7 @@ const Experience = () => {
   ];
 
   return (
+    <Container>
     <div className="container mx-56 py-8 px-4">
       <h1 className="text-4xl font-bold text-start text-white mb-8">Experience</h1>
      
@@ -60,6 +62,7 @@ const Experience = () => {
         ))}
       </div>
     </div>
+    </Container>
   );
 };
 
