@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4 py-8 mb-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-4">  
-          <h1 className="text-white text-xl font-bold ">Ajmira</h1>
+        <div className="flex items-center space-x-12">  
+          <h1 className="text-white text-2xl font-bold italic ">Ajmira</h1>
         </div>
 
         <div className="md:hidden text-white cursor-pointer" onClick={toggleMenu}>
