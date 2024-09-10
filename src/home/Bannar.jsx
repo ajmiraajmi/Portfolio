@@ -6,7 +6,7 @@ import resume from "../assets/cv/Resume.pdf"
 const Banner = () => {
   return (
     <Container>
-    <div className="mt-12 container mx-auto mb-8">
+    <div className="mt-16 container mx-auto mb-40">
       <div className="grid grid-cols-2 gap-4 text-white">
         <div className="flex flex-col justify-center p-12">
           <h1 className="text-4xl mb-4">Hello, I am Ajmira.</h1>
@@ -31,7 +31,7 @@ const Banner = () => {
           />
         </div> */}
       </div>
-      <div className="mt-2 mx-10">
+      <div className="mt-8 mx-10">
           <a
             href={resume} 
             download
